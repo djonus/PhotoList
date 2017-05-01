@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lt.danjon.task.ui.widgets.AspectRatioLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:aspectRatio="0.8">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:transitionName="photo" />
+
+    <TextView
+        android:transitionName="title"
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#60000000"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-smallcaps"
+        android:maxLines="3"
+        android:paddingBottom="8dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        tools:text="Title" />
+</lt.danjon.task.ui.widgets.AspectRatioLayout>

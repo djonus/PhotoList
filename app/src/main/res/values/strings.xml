@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PhotoList</string>
+    <string name="action_sort">Sort</string>
+    <string name="empty_title">No title</string>
+</resources>
