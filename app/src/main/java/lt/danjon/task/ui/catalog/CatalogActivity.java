@@ -3,18 +3,15 @@ package lt.danjon.task.ui.catalog;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.support.v4.app.ActivityOptionsCompat;
-import android.support.v4.util.Pair;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.trello.rxlifecycle.android.ActivityEvent;
+import com.trello.rxlifecycle.components.support.RxAppCompatActivity;
 
 import java.util.List;
 
@@ -25,13 +22,12 @@ import butterknife.ButterKnife;
 import lt.danjon.task.R;
 import lt.danjon.task.TestApp;
 import lt.danjon.task.ui.ListLoader;
-import lt.danjon.task.ui.RxCompatActivity;
 import lt.danjon.task.ui.model.Photo;
 import lt.danjon.task.ui.widgets.BottomScrollListener;
 import lt.danjon.task.ui.widgets.ItemMarginDecoration;
 import rx.android.schedulers.AndroidSchedulers;
 
-public class CatalogActivity extends RxCompatActivity implements PhotosAdapter.ItemClickListener{
+public class CatalogActivity extends RxAppCompatActivity implements PhotosAdapter.ItemClickListener{
 
     @Inject ListLoader<Photo> listLoader;
 
